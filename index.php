@@ -1,11 +1,12 @@
 <?php
     require_once __DIR__ . '/classes/Product.php';
+    require_once __DIR__ . '/classes/Food.php';
 
-    $product = new Product('spazzola', 4.50, 200, 'cane');
-    echo "<pre>";
-    var_dump($product);
-    echo "</pre>";
+    $testProduct = new Product('spazzola', 4.50, 200, 'cane');
+    var_dump($testProduct);
 
+    $testFood = new Food('crocchette', 9.80, 100, 'gatto', 'secco', '31/12/2022');
+    var_dump($testFood);
 ?>
 
 <!DOCTYPE html>
