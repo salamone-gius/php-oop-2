@@ -4,6 +4,7 @@
     require_once __DIR__ . '/classes/Toy.php';
     require_once __DIR__ . '/classes/User.php';
     require_once __DIR__ . '/classes/RegisteredUser.php';
+    require_once __DIR__ . '/classes/CreditCard.php';
 
     $testProduct = new Product('spazzola', 4.50, 200, 'cane');
     var_dump($testProduct);
@@ -19,6 +20,9 @@
 
     $testRegisteredUser = new RegisteredUser('Franco', 'Pippo', 'franco.pippo#gmail.com', '4444 5555 6666 7777');
     var_dump($testRegisteredUser);
+
+    $testCreditCard = new CreditCard('8888 9999 0000 1111', 000, '31/12/2022', 'Visa');
+    var_dump($testCreditCard);
 
 ?>
 
