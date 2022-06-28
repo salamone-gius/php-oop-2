@@ -6,7 +6,7 @@
         public $stock;
         public $forWhatAnimal;
 
-        public function __construct($_name, $_price, $_stock, $_for_what_animal)
+        public function __construct(string $_name, float $_price, int $_stock, string $_for_what_animal)
         {
             $this->name = $_name;
             $this->price = $_price;
@@ -14,5 +14,4 @@
             $this->forWhatAnimal = $_for_what_animal;
         }
     }
-
 ?>

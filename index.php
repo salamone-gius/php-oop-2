@@ -1,6 +1,11 @@
 <?php
     require_once __DIR__ . '/classes/Product.php';
 
+    $product = new Product('spazzola', 4.50, 200, 'cane');
+    echo "<pre>";
+    var_dump($product);
+    echo "</pre>";
+
 ?>
 
 <!DOCTYPE html>
