@@ -1,4 +1,5 @@
 <?php
+    require_once __DIR__ . '/classes/Product.php';
 
 ?>
 
@@ -11,6 +12,5 @@
         <title>PHP OOP 2</title>
     </head>
     <body>
-        
     </body>
 </html>
