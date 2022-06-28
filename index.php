@@ -3,6 +3,7 @@
     require_once __DIR__ . '/classes/Food.php';
     require_once __DIR__ . '/classes/Toy.php';
     require_once __DIR__ . '/classes/User.php';
+    require_once __DIR__ . '/classes/RegisteredUser.php';
 
     $testProduct = new Product('spazzola', 4.50, 200, 'cane');
     var_dump($testProduct);
@@ -13,8 +14,11 @@
     $testToy = new Toy('bilanciere da riporto', 20.00, 50, 'cane', 'addestramento');
     var_dump($testToy);
 
-    $testUser = new User('Pippo', 'Franco', 'pippo.franco@gmail.com', 0, '0000 1111 2222 3333');
+    $testUser = new User('Pippo', 'Franco', 'pippo.franco@gmail.com', '0000 1111 2222 3333');
     var_dump($testUser);
+
+    $testRegisteredUser = new RegisteredUser('Franco', 'Pippo', 'franco.pippo#gmail.com', '4444 5555 6666 7777');
+    var_dump($testRegisteredUser);
 
 ?>
 
